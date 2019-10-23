@@ -7,5 +7,59 @@
 
 <body>
   <button class="btn" onclick="location.href='index.html'" id="buttonShort"><i class="fa fa-home"></i></button>
-  Dining
+
+  <h1 align="center" style="font-size: 2.5em">List of Dining Halls</h1>
+
+  <button class="collapsible" align="center">ABP at Goodwin Hall</button>
+
+  <div class="content">
+    <img class="center" src="images/goodwin.jpg" style="width: 400px; height=400px;"/>
+
+    <table width="50%" align="center" border="0px" cellpadding="10px" class="fixed">
+      <!--
+      Hours info
+      -->
+      <tr>
+        <td>Weekday Hours:</td>
+        <td align="left" style="color: grey">7:30am - 4:00pm</td>
+      </tr>
+      <tr>
+        <td>Weekend Hours:</td>
+        <td align="left" style="color: grey">Closed</td>
+      </tr>
+
+      <!--
+      Type of food served
+      -->
+      <tr>
+        <td>Type of Food Served:</td>
+        <td align="left" style="color: grey">Breakfast, Sandwiches, Soups, Salads, Baked Goods, Coffee</td>
+      </tr>
+
+      <!--
+      General info
+      -->
+      <tr>
+        <td>General Info:</td>
+        <td align="left" style="color: grey">In 2014, an ABP kiosk opened in Goodwin Hall to serve the students and faculty in the new engineering building. The kiosk serves many of the same selections as the kiosk in Squires Student Center.</td>
+      </tr>
+    </table>
+  </div>
 </body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+    }
+</script>

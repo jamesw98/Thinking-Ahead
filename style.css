@@ -9,7 +9,7 @@ table {
     display: table;
     text-align: center;
     margin-top: 50px;
-    border: transparent;
+    border: maroon;
 }
 
 table.fixed { table-layout:fixed; }
@@ -74,4 +74,44 @@ button:hover{
   margin-bottom: 5px;
   font-size: .75em;
   color: silver;
+}
+
+p {
+  font: 15px "Trebuchet MS";
+  color: grey;
+}
+
+.collapsible {
+    background-color: transparent;
+    font: 2em "Trebuchet MS";
+    color: #4fc3f7;
+    cursor: pointer;
+    padding: 20px 100px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    outline: none;
+}
+
+.active, .collapsible:hover {
+    color: maroon;
+    background-color: transparent;
+}
+
+.content {
+    padding: 0 170px;
+    display: none;
+    overflow: hidden;
+    font: 1.5em "Trebuchet MS";
+    color: #757575;
+    background-color: transparent;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 30px;
 }
