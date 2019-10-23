@@ -9,7 +9,7 @@ table {
     display: table;
     text-align: center;
     margin-top: 50px;
-    border-bottom: 1px red;
+    border: transparent;
 }
 
 table.fixed { table-layout:fixed; }
@@ -30,6 +30,7 @@ h2{
 a{
     color: #4fc3f7;
     text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -66,4 +67,11 @@ button:hover{
 
 #buttonShort:hover{
     color: #660000;
+}
+
+.indent {
+  margin-left: 30px;
+  margin-bottom: 5px;
+  font-size: .75em;
+  color: silver;
 }
