@@ -7,5 +7,64 @@
 
 <body>
   <button class="btn" onclick="location.href='index.html'" id="buttonShort"><i class="fa fa-home"></i></button>
-  Courses
+
+  <button class="collapsible" align="center">Course Requests</button>
+
+  <div class="content">
+    <img class="center" src="images/cr.png" style="width: 500px; height=500px;"/>
+
+    <table width="70%" align="center" border="0px" cellpadding="10px" class="fixed">
+      <tr>
+        <td>
+          <h1 style="font-size: 1.75em">What are Course Requests?</h1>
+          <h1 style="font-size: 1.5em; margin-top: -25px !important;">and how do I do them?</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <h1 style="font-size: 1em; color: grey">Course requests are exactly what they sound like, you are requesting the courses you want to take for the next semester. The part that a lot of people find confusing is how to find what classes are offered next semester. To find that you would need to look at the <a href="https://banweb.banner.vt.edu/ssb/prod/HZSKVTSC.P_DispRequest" target="_blank">Timetable of Classes</a>.</h1>
+          <h1 style="font-size: 1em; color: grey">Through the Timetable of Classes you can search the courses you want to take and find their CRN (a 5 digit number). This is what you will enter to the course request form. You can enter up to 10 CRNs to request. Although, taking more than 19 credit hours will require permission from your adviser.</h1>
+          <h1 style="font-size: 1em; color: grey">This being said, you are not guarenteed to get the classes you request. Course requests will normally open about halfway through the semester, either around mid October for the Fall, or around spring break for Spring.</h1>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <button class="collapsible" align="center">Drop/Add</button>
+
+  <div class="content">
+    <img class="center" src="images/da.png" style="width: 500px; height=500px;"/>
+
+    <table width="70%" align="center" border="0px" cellpadding="10px" class="fixed">
+      <tr>
+        <td>
+          <h1 style="font-size: 1.75em">What is Drop/Add?</h1>
+          <h1 style="font-size: 1.5em; margin-top: -25px !important;">and how do I do it?</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <h1 style="font-size: 1em; color: grey">Drop/Add is the period of time where you an either drop or add classes to your schedule. This is also where you will see the results of your course requests.</h1>
+          <h1 style="font-size: 1em; color: grey">You will be able to add classes for the next semester toward the end of the current semester, and at the start of the next semester as well. Adding will stop around the second or third week of class, but dropping will continue for a couple more weeks after that.</h1>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+    }
+</script>
