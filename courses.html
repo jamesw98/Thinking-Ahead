@@ -8,6 +8,8 @@
 <body>
   <button class="btn" onclick="location.href='index.html'" id="buttonShort"><i class="fa fa-home"></i></button>
 
+  <h1 align="center" style="font-size: 2.5em">Course Management Info</h1>
+
   <button class="collapsible" align="center">Course Requests</button>
 
   <div class="content">
@@ -50,6 +52,26 @@
       </tr>
     </table>
   </div>
+
+  <button class="collapsible" align="center">Easy/Interesting CLEs</button>
+
+  <div class="content">
+    <img class="center" src="images/da.png" style="width: 500px; height=500px;"/>
+
+    <table width="70%" align="center" border="0px" cellpadding="10px" class="fixed">
+      <tr>
+        <td>
+          <h1 style="font-size: 1.75em">What are some easy or interesting CLEs to take?</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="left">
+          <h1 style="font-size: 1em; color: grey">CLE's are courses that every student has to take. </h1>
+          <h1 style="font-size: 1em; color: grey"></h1>
+        </td>
+      </tr>
+    </table>
+  </div>
 </body>
 
 <script>
@@ -61,9 +83,9 @@
             this.classList.toggle("active");
             var content = this.nextElementSibling;
             if (content.style.display === "block") {
-            content.style.display = "none";
+              content.style.display = "none";
             } else {
-            content.style.display = "block";
+              content.style.display = "block";
             }
         });
     }
