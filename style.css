@@ -115,3 +115,11 @@ p {
   width: 50%;
   margin-top: 30px;
 }
+
+.gobblersearch{
+  width: 50%;
+  border-radius: 10px;
+  height: 20%;
+  font-size: 18px;
+  padding-left: 10px;
+}
