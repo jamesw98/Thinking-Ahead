@@ -30,7 +30,6 @@ h2{
 a{
     color: #4fc3f7;
     text-decoration: none;
-    text-decoration: underline;
 }
 
 
@@ -90,7 +89,7 @@ p {
     width: 100%;
     border: none;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
     outline: none;
 }
 
