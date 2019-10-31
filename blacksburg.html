@@ -1,0 +1,68 @@
+<head>
+    <title>Blacksburg</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+
+    <link rel="shortcut icon" href="images/favicon (1).ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+</head>
+
+<body>
+  <button class="btn" onclick="location.href='index.html'" id="buttonShort"><i class="fa fa-home"></i></button>
+
+    <h1 align="center" style="font-size: 2.5em">Things Around Blacksburg</h1>
+
+    <button class="collapsible" align="center">Restaurants</button>
+
+    <div class="content">
+
+      <table width="70%" align="center" border="0px" cellpadding="10px" class="fixed">
+        <tr>
+          <td>
+            <h1 style="font-size: 1.75em">What are some good restaurants in Blacksburg?</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="left">
+            <h1 style="font-size: 1em; color: grey">There are a ton of great restaurants in Blacksburg. I am going to go over a couple that I have been to, this is by no means a comprehensive list and all of this is my opinion.</h1>
+            <h1 style="font-size: 1em; color: grey">
+              <ul>
+                <li>
+                  <h1 style="font-size: 20px;">Macado's:</h1> This is one of my favorite places to go. The food is pretty good, not the best, but it is very good for the price. Another good perk about Macado's is that there are a lot of options. They have sandwiches, pasta, wings, wraps, appetizers, deserts, and much more. My only complaint is that is you go there later (past 9pm), the services is pretty slow. If you can't decide what you want to eat and also don't want to spend that much, this is the place to go.
+                </li>
+                <li>
+                  <h1 style="font-size: 20px;">DP Dough:</h1> This is another great, cheap restaurant. Except DP Dough specializes in one thing, calzones. They have a bunch of fillings you can put in the calzone and they also have daily calzones that are only $6. They are also open very late, until 3am. If you are up late and want some cheap, good food, this is the place to go.
+                </li>
+                <li>
+                  <h1 style="font-size: 20px;">Benny's:</h1> I'm sure, even if you are a freshman, you have heard of Benny's. If you haven't, Benny's is a pizza place that serves huge slices of pizza. It is pretty cheap, $5 a slice, but again, the slices are massive. You can also get a whole pie, but they are 28 inches in diameter. The pizza is very good and I would highly recommend it.
+                </li>
+                <li>
+                  <h1 style="font-size: 20px;">PK's Bar and Grill:</h1> PK's is obviously a bar, you can still go if you are under 21, but you have to show an ID, and they will mark your hand with an "X" so you can't get alcohol. Most of the food is okay, but the pizza is very good. This is a bar, so it will get pretty busy at night and on the weekends, so if you are just going for food, try and avoid those times.
+                </li>
+              </ul>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <button class="collapsible" align="center">Hiking Spots</button>
+</body>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+        });
+    }
+</script>
